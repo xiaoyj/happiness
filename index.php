@@ -1,3 +1,3 @@
 <?php
-echo '<script>location.href="wall/index.php?style=jiuba";</script>';
+echo '<script>location.href="wall/index.php";</script>';
 ?>

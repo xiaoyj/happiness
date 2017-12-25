@@ -8,70 +8,45 @@
 <title>婚礼上墙大屏幕</title>
 <script type="text/javascript"> 
 if(document.all){
-	alert("ie浏览器无法正常解析本页，请使用谷歌内核的流量器浏览。如（360浏览器，猎豹浏览器等）");
+	alert("Can't open, please change the browser!");
 	window.history.back(-1); 
 	}
 </script> 
 </head>
 
 <body>
-	<div class="main">
-   <EMBED style=" z-index:-2;RIGHT: 250px; POSITION: absolute; TOP: 55px; absolute: " align=right src=".style/<?php echo $style?>/images/fl.swf" width=1600 height=625 type=application/x-shockwave-flash wmode="transparent" quality="high" ;></EMBED>
-   <EMBED style="z-index:-2;LEFT: 250px; POSITION: absolute; TOP: 55px; absolute: " align=right src=".style/<?php echo $style?>/images/fl.swf" width=1600 height=625 type=application/x-shockwave-flash wmode="transparent" quality="high" ;></EMBED>
-
-<div class="l"></div>
-<div class="r"></div>
-<div class="top" onClick="viewExplan();" data-position="right center" data-content="二维码，快捷键M">
-	<?php 
-		$i=1;
-		for(;$i<20;$i++){
-			if(file_exists('logo/'.$i.'.png')){
-			}else{
-				break;
-			}
-		}
-		if ($i <= 2){
-			echo '<div class="top-logo">';
-		}else{
-			echo '<div class="ui shape top-logo">';
-		}
-	
-	?>
-	<div class="sides">
-	<?php 
-		for($i=1;$i<20;$i++){
-			if(file_exists('logo/'.$i.'.png')){
-				if($i==1){
-					echo '<img src="logo/1.png" width=455px height=135px class="active side"/>';
-				}else{
-					echo '<img src="logo/'.$i.'.png" width=455px height=135px class="side"/>';
-				}
-			}
-		}
-	
-	?>
+	<div class = "main">
+		<EMBED style=" z-index:-2;RIGHT: 250px; POSITION: absolute; TOP: 55px; absolute: " align=right src=".style/<?php echo $style?>/images/flash.swf" width=1600 height=625 type=application/x-shockwave-flash wmode="transparent" quality="high" ;></EMBED>
+		<EMBED style="z-index:-2;LEFT: 250px; POSITION: absolute; TOP: 55px; absolute: " align=right src=".style/<?php echo $style?>/images/flash.swf" width=1600 height=625 type=application/x-shockwave-flash wmode="transparent" quality="high" ;></EMBED>
+		<div class="top" onClick="viewExplan();" data-position="right center" data-content="二维码，快捷键M">
+			<?php
+				echo '<div class ="top-logo">';
+			?>
+			<div class="sides">
+			<?php
+				echo '<img src="logo/1.png" width=455px height=135px class="active side"/>';
+			?>
+		</div>
 	</div>
 
-</div>
-<div class="kword ui shape ">
-	<div class="sides">
-		<div class="k active side">关注我们的官方账号<strong><?php echo $dianplu_wxh;?></strong> <br>发送<?php  echo $xuanzezu[0];?>您想说的话即可上墙！</div>
+	<div class="keyword ui shape">
+		<div class = "side">
+			<div class="k active side">关注我们的官方账号<stong>Test</stong><br>发送您想说的话即可上墙！</div>
+		</div>
+	</div>
 
-		<div class="k side"><?php  echo $xuanzezu[1];?></div>
+	<div class="mone" id="mone" onClick="viewOneHide();"><div class="leftside"><div class="part"><div class="pic"><img class="msgconimg" src="images/ma.jpg" width="100" height="100"></div><div class="username" style="color:#fff"><span style="color:#fff"></span></div></div></div><div class="rightside"><div class="rightmain"><div class="rconner"></div><span class="msgcon"></span></div></div></div>
 
-		<div class="k side"><?php  echo $xuanzezu[2];?></div>
+	<div id="explan" onClick="viewExplan();" class="ui primary segment" >
+    <div class="ui ribbon green label"><b style="font-size:50px;">上墙关注：</b></div>
+    <div class="erweima">
+    <center><div class="mabox">
+    	<?php
+    		echo'<div class="pic"><center><a class="ui green label"><b style="font-size:2em;line-height: 1.7em;text-transform:lowercase;">微信:Test</b></a></center><img src="logo/code.jpg" width=362px height=362px;/></div>';
+    	?>
+    </div></center>
+	</div>
 	</div>
 </div>
-</div>
-    <div class="wall">
-        <div class="left">
-     
-        </div>
-      <div class="center">
-            <div class="list">
-                <ul id="list"></ul>
-            </div>
-            <div class="footer"></div>
-        <div class="btns">
 </body>
 </html>
