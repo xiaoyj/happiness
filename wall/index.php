@@ -12,6 +12,10 @@ if(document.all){
 	window.history.back(-1); 
 	}
 </script> 
+
+<link rel="stylesheet" href="css/wxwall.css" type="text/css">
+<link rel="stylesheet" href="style/css/style.css" type="text/css">
+
 </head>
 
 <body>
