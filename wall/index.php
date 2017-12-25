@@ -34,9 +34,7 @@ if(document.all){
 			<div class="k active side">关注我们的官方账号<stong>Test</stong><br>发送您想说的话即可上墙！</div>
 		</div>
 	</div>
-
-	<div class="mone" id="mone" onClick="viewOneHide();"><div class="leftside"><div class="part"><div class="pic"><img class="msgconimg" src="images/ma.jpg" width="100" height="100"></div><div class="username" style="color:#fff"><span style="color:#fff"></span></div></div></div><div class="rightside"><div class="rightmain"><div class="rconner"></div><span class="msgcon"></span></div></div></div>
-
+	
 	<div id="explan" onClick="viewExplan();" class="ui primary segment" >
     <div class="ui ribbon green label"><b style="font-size:50px;">上墙关注：</b></div>
     <div class="erweima">
