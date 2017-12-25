@@ -48,7 +48,31 @@ if(document.all){
     	?>
     </div></center>
 	</div>
+	<div class="ui bottom right attached label vote-right"><a class="ui black circular label" >×</a></div>
 	</div>
 </div>
+
+<script type="text/javascript">
+$(function(){
+  $('.top').popup();
+  $('.tooltip').popup();
+$(document).keydown(function (event)
+    {    
+           if (event.keyCode == 77) {
+				$('.top').click();
+            }
+			if(event.keyCode == 70){
+				$('.btnSkinSel').click();
+			}
+	});
+};
+
+var refreshtime=1;
+var len=4;
+var cur=0;
+var mtime;
+var data=new Array();
+data[0]=new Array('0','../img/0.jpg','Shaw','Welcome to my wedding wall!','','weixin');
+
 </body>
 </html>
